@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF104762152BDAB2004E0C35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF104761152BDAB2004E0C35 /* UIKit.framework */; };
+		EF104764152BDAB2004E0C35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF104763152BDAB2004E0C35 /* Foundation.framework */; };
+		EF104766152BDAB2004E0C35 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF104765152BDAB2004E0C35 /* CoreGraphics.framework */; };
+		EF10476C152BDAB2004E0C35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF10476A152BDAB2004E0C35 /* InfoPlist.strings */; };
+		EF10476E152BDAB2004E0C35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF10476D152BDAB2004E0C35 /* main.m */; };
+		EF104772152BDAB2004E0C35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF104771152BDAB2004E0C35 /* AppDelegate.m */; };
+		EF10477A152BDAB3004E0C35 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF104779152BDAB3004E0C35 /* SenTestingKit.framework */; };
+		EF10477B152BDAB3004E0C35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF104761152BDAB2004E0C35 /* UIKit.framework */; };
+		EF10477C152BDAB3004E0C35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF104763152BDAB2004E0C35 /* Foundation.framework */; };
+		EF104784152BDAB3004E0C35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF104782152BDAB3004E0C35 /* InfoPlist.strings */; };
+		EF104787152BDAB3004E0C35 /* Fun_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF104786152BDAB3004E0C35 /* Fun_AppTests.m */; };
+		EF104792152BDB5D004E0C35 /* InfiniteScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF104791152BDB5D004E0C35 /* InfiniteScrollController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF10477D152BDAB3004E0C35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF104754152BDAB2004E0C35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF10475C152BDAB2004E0C35;
+			remoteInfo = "Fun App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF10475D152BDAB2004E0C35 /* Fun App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fun App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF104761152BDAB2004E0C35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF104763152BDAB2004E0C35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF104765152BDAB2004E0C35 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF104769152BDAB2004E0C35 /* Fun App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fun App-Info.plist"; sourceTree = "<group>"; };
+		EF10476B152BDAB2004E0C35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF10476D152BDAB2004E0C35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF10476F152BDAB2004E0C35 /* Fun App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fun App-Prefix.pch"; sourceTree = "<group>"; };
+		EF104770152BDAB2004E0C35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF104771152BDAB2004E0C35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF104778152BDAB3004E0C35 /* Fun AppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fun AppTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF104779152BDAB3004E0C35 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EF104781152BDAB3004E0C35 /* Fun AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fun AppTests-Info.plist"; sourceTree = "<group>"; };
+		EF104783152BDAB3004E0C35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF104785152BDAB3004E0C35 /* Fun_AppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fun_AppTests.h; sourceTree = "<group>"; };
+		EF104786152BDAB3004E0C35 /* Fun_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fun_AppTests.m; sourceTree = "<group>"; };
+		EF104790152BDB5D004E0C35 /* InfiniteScrollController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollController.h; sourceTree = "<group>"; };
+		EF104791152BDB5D004E0C35 /* InfiniteScrollController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF10475A152BDAB2004E0C35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF104762152BDAB2004E0C35 /* UIKit.framework in Frameworks */,
+				EF104764152BDAB2004E0C35 /* Foundation.framework in Frameworks */,
+				EF104766152BDAB2004E0C35 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF104774152BDAB3004E0C35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF10477A152BDAB3004E0C35 /* SenTestingKit.framework in Frameworks */,
+				EF10477B152BDAB3004E0C35 /* UIKit.framework in Frameworks */,
+				EF10477C152BDAB3004E0C35 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF104752152BDAB2004E0C35 = {
+			isa = PBXGroup;
+			children = (
+				EF104767152BDAB2004E0C35 /* Fun App */,
+				EF10477F152BDAB3004E0C35 /* Fun AppTests */,
+				EF104760152BDAB2004E0C35 /* Frameworks */,
+				EF10475E152BDAB2004E0C35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF10475E152BDAB2004E0C35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF10475D152BDAB2004E0C35 /* Fun App.app */,
+				EF104778152BDAB3004E0C35 /* Fun AppTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF104760152BDAB2004E0C35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF104761152BDAB2004E0C35 /* UIKit.framework */,
+				EF104763152BDAB2004E0C35 /* Foundation.framework */,
+				EF104765152BDAB2004E0C35 /* CoreGraphics.framework */,
+				EF104779152BDAB3004E0C35 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF104767152BDAB2004E0C35 /* Fun App */ = {
+			isa = PBXGroup;
+			children = (
+				EF104770152BDAB2004E0C35 /* AppDelegate.h */,
+				EF104771152BDAB2004E0C35 /* AppDelegate.m */,
+				EF104790152BDB5D004E0C35 /* InfiniteScrollController.h */,
+				EF104791152BDB5D004E0C35 /* InfiniteScrollController.m */,
+				EF104768152BDAB2004E0C35 /* Supporting Files */,
+			);
+			path = "Fun App";
+			sourceTree = "<group>";
+		};
+		EF104768152BDAB2004E0C35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF104769152BDAB2004E0C35 /* Fun App-Info.plist */,
+				EF10476A152BDAB2004E0C35 /* InfoPlist.strings */,
+				EF10476D152BDAB2004E0C35 /* main.m */,
+				EF10476F152BDAB2004E0C35 /* Fun App-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF10477F152BDAB3004E0C35 /* Fun AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF104785152BDAB3004E0C35 /* Fun_AppTests.h */,
+				EF104786152BDAB3004E0C35 /* Fun_AppTests.m */,
+				EF104780152BDAB3004E0C35 /* Supporting Files */,
+			);
+			path = "Fun AppTests";
+			sourceTree = "<group>";
+		};
+		EF104780152BDAB3004E0C35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF104781152BDAB3004E0C35 /* Fun AppTests-Info.plist */,
+				EF104782152BDAB3004E0C35 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF10475C152BDAB2004E0C35 /* Fun App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF10478A152BDAB3004E0C35 /* Build configuration list for PBXNativeTarget "Fun App" */;
+			buildPhases = (
+				EF104759152BDAB2004E0C35 /* Sources */,
+				EF10475A152BDAB2004E0C35 /* Frameworks */,
+				EF10475B152BDAB2004E0C35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fun App";
+			productName = "Fun App";
+			productReference = EF10475D152BDAB2004E0C35 /* Fun App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF104777152BDAB3004E0C35 /* Fun AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF10478D152BDAB3004E0C35 /* Build configuration list for PBXNativeTarget "Fun AppTests" */;
+			buildPhases = (
+				EF104773152BDAB3004E0C35 /* Sources */,
+				EF104774152BDAB3004E0C35 /* Frameworks */,
+				EF104775152BDAB3004E0C35 /* Resources */,
+				EF104776152BDAB3004E0C35 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF10477E152BDAB3004E0C35 /* PBXTargetDependency */,
+			);
+			name = "Fun AppTests";
+			productName = "Fun AppTests";
+			productReference = EF104778152BDAB3004E0C35 /* Fun AppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF104754152BDAB2004E0C35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Ivy Call, LLC";
+			};
+			buildConfigurationList = EF104757152BDAB2004E0C35 /* Build configuration list for PBXProject "Fun App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF104752152BDAB2004E0C35;
+			productRefGroup = EF10475E152BDAB2004E0C35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF10475C152BDAB2004E0C35 /* Fun App */,
+				EF104777152BDAB3004E0C35 /* Fun AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF10475B152BDAB2004E0C35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF10476C152BDAB2004E0C35 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF104775152BDAB3004E0C35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF104784152BDAB3004E0C35 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EF104776152BDAB3004E0C35 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF104759152BDAB2004E0C35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF10476E152BDAB2004E0C35 /* main.m in Sources */,
+				EF104772152BDAB2004E0C35 /* AppDelegate.m in Sources */,
+				EF104792152BDB5D004E0C35 /* InfiniteScrollController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF104773152BDAB3004E0C35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF104787152BDAB3004E0C35 /* Fun_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF10477E152BDAB3004E0C35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF10475C152BDAB2004E0C35 /* Fun App */;
+			targetProxy = EF10477D152BDAB3004E0C35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF10476A152BDAB2004E0C35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF10476B152BDAB2004E0C35 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF104782152BDAB3004E0C35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF104783152BDAB3004E0C35 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF104788152BDAB3004E0C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF104789152BDAB3004E0C35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF10478B152BDAB3004E0C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fun App/Fun App-Prefix.pch";
+				INFOPLIST_FILE = "Fun App/Fun App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF10478C152BDAB3004E0C35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fun App/Fun App-Prefix.pch";
+				INFOPLIST_FILE = "Fun App/Fun App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF10478E152BDAB3004E0C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fun App.app/Fun App";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fun App/Fun App-Prefix.pch";
+				INFOPLIST_FILE = "Fun AppTests/Fun AppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EF10478F152BDAB3004E0C35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fun App.app/Fun App";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fun App/Fun App-Prefix.pch";
+				INFOPLIST_FILE = "Fun AppTests/Fun AppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF104757152BDAB2004E0C35 /* Build configuration list for PBXProject "Fun App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF104788152BDAB3004E0C35 /* Debug */,
+				EF104789152BDAB3004E0C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF10478A152BDAB3004E0C35 /* Build configuration list for PBXNativeTarget "Fun App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF10478B152BDAB3004E0C35 /* Debug */,
+				EF10478C152BDAB3004E0C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF10478D152BDAB3004E0C35 /* Build configuration list for PBXNativeTarget "Fun AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF10478E152BDAB3004E0C35 /* Debug */,
+				EF10478F152BDAB3004E0C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF104754152BDAB2004E0C35 /* Project object */;
+}
