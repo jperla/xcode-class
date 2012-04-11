@@ -10,6 +10,8 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
++ (BOOL) isIpad;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @end

@@ -7,18 +7,22 @@
 //
 
 #import "InfiniteScrollController.h"
+#import "AppDelegate.h"
 
 #define CELL_HEIGHT 40
 
 @implementation InfiniteScrollController
 
 @synthesize parentNavigationController;
+@synthesize numRowsToReturn;
+@synthesize infiniteScrollLock;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        self.numRowsToReturn = 100;
     }
     return self;
 }
@@ -36,6 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft:)];
     swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
@@ -99,11 +104,16 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 5;
+    return self.numRowsToReturn;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return CELL_HEIGHT;
+    
+    if ([AppDelegate isIpad]) {
+        return 2 * CELL_HEIGHT;
+    } else {
+        return CELL_HEIGHT;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -121,10 +131,23 @@
     
     UILabel *textLabel = [[UILabel alloc] initWithFrame:cell.bounds];
     textLabel.text = [NSString stringWithFormat:@"Row %d", row];
+    int fontSize = (CELL_HEIGHT - 10);
+    if ([AppDelegate isIpad]) {
+        fontSize = (fontSize * 2) - 10;
+    }
+    textLabel.font = [textLabel.font fontWithSize:fontSize];
     
     [cell addSubview:textLabel];
     
     // Configure the cell...
+    
+    if (row == (self.numRowsToReturn - 30)) {
+        //load data
+        self.numRowsToReturn += 100;
+        NSLog(@"This is infinite.");
+        [self.tableView performSelectorInBackground:@selector(reloadData) withObject:nil];
+        //[self.tableView reloadData];
+    }
     
     return cell;
 }

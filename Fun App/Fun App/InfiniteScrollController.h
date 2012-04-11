@@ -11,5 +11,7 @@
 @interface InfiniteScrollController : UITableViewController
 
 @property (strong) UINavigationController *parentNavigationController;
+@property () NSInteger numRowsToReturn;
+@property () NSInteger infiniteScrollLock;
 
 @end

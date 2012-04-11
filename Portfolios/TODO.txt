@@ -1,0 +1,8 @@
+TODO
+
+Styling methods are obsolete/broken--should use UIAppearance instead of nasty swizzling
+Many features lacking
+Graph drawing is slow
+Fix use of deprecated methods
+Retina graphics are missing
+Some rare threading deadlocks
